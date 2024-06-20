@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        font-size: 12px;
+    }
+    img {
+        height: 14px;
+        width: 14px;
+    }
+    .resume {
+        width: 768px;
+        margin: 0 auto;
+        color: #000;
+    }
+    .header {
+        text-align: center;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+    }
+    .header h1 {
+        margin-block-end: 6px;
+    }
+    .header img {
+        padding-right: 2px;
+    }
+    .section {
+        margin-top: 20px;
+    }
+    .section-title {
+        font-weight: bold;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+    }
+    .work-experience, .certification, .education, .skills {
+        padding-left: 20px;
+    }
+    .work-experience p, .certification p, .education p, .skills li {
+        margin: 5px 0;
+    }
+    .work-experience h3, .certification h3, .education h3, .skills h3 {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .work-experience ul, .certification ul, .education ul, .skills ul {
+        margin: 0 0 2px;
+    }
+    .skills ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skills li {
+        flex-basis: 33%;
+        margin-bottom: 5px;
+    }
+    .visits {
+        display: flex;
+        justify-content: flex-end;
+    }
+</style>
+<script src="js/visits.js"></script>
+</head>
+<body>
+<div class="resume">
+    <div class="header">
+        <h1>Benjamin Inch</h1>
+        <p>
+            <img src=img/lock.png />Security Automation Engineer
+            <img src=img/location.png />Toronto ON</p>
+        <p>
+            <img src=img/phone-call.png /> (647) 806-8057
+            <img src=img/email.png /><a href="mailto:benjamin.inch@rbc.com">benjamin.inch@rbc.com</a>
+            <img src=img/linkedin-logo.png /><a href=https://www.linkedin.com/in/benjamin-inch> benjamin-inch</a>
+            <img src=img/github.png /><a href=https://github.com/nichejambinn>nichejambinn</a>
+            <img src=img/internet.png /><a href=https://nichejambinn.github.io>nichejambinn.github.io</a>
+        </p>
+    </div>
+    
+    <div class="section work-experience">
+        <div class="section-title">Work Experience</div>
+        <h3>SOC Automation Engineer</h3>
+        <p>RBC | Toronto ON | Aug 2023 - Present</p>
+        <ul>
+            <li>Designing and implementing SOAR solutions with tools to streamline and support security investigation and response processes</li>
+            <li>Reduced MTTR by 42 hours on phishing campaign investigations by developing an automation playbook and new tool features</li>
+            <li>Collaborating with DevOps and app teams to develop automation, resulting in up to 44% time savings across high volume alerts</li>
+            <li>Discovered and reported on a proxy bypass in corporate mobile devices that could allow users to load blocked web pages</li>
+            <li>Skilled in Python and XSOAR for automating cybersecurity operations</li>
+        </ul>
+        <h3>Security Analyst (Triage)</h3>
+        <p>RBC | Toronto ON | Jan 2022 - Aug 2023</p>
+        <ul>
+            <li>Analyzed event logs from multiple sources using SIEM and EDR to determine the threat and scope of detected activity</li>
+            <li>Reported using Jupyter Notebooks on alert datam, reducing false positives by over 110 alerts per year</li>
+            <li>Crafted and updated 35 documents to socialize important info and promote repeatable processes across the team</li>
+            <li>Proficient with CrowdStrike Falcon, Splunk, IBM QRadar and malware analysis for alert triage</p>
+        </ul>      
+        <h3>Application Developer</h3>
+        <p>Softchoice | Oakville ON | Jan - Apr 2020</p>
+        <ul>
+            <li>Collaborated with my project lead on the development and completion of 3 single-page web applications</li>
+            <li>Utilized a geocoding API to find address coordinates as well as open source libraries for data representation</li>
+            <li>Developed using C# and JavaScript</li>
+        </ul>
+        <!-- More work experiences here -->
+    </div>
+
+    <div class="section certification">
+        <div class="section-title">Certification</div>
+        <h3>CCSP (<a href="https://www.credly.com/badges/17d738a1-4c31-40ed-8fb3-1156618415b4/linked_in?t=s6i0i1">Associate of ISC2</a>)</h3>
+        <p>ISC2 | Dec 2023</p>
+        <ul>
+            <li>Confirmed knowledge and competency in applying best practices to cloud security architecture, design, operations and services</li>
+        </ul>
+        <h3>Microsoft Azure Fundamentals (<a href="https://www.credly.com/badges/6afa4d81-da78-4d01-a8c5-8f66c1517f40">AZ-900</a>)</h3>
+        <p>Microsoft | Jun 2021</p>
+        <ul>
+            <li>Demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure</li>
+        </ul>
+    </div>
+
+    <div class="section education">
+        <div class="section-title">Education</div>
+        <h3>Software Development & Network Engineering</h3>
+        <p>Sheridan College | Oakville ON</p>
+        <p>Jan 2019 - Dec 2021</p>
+        <ul>
+            <li>GPA 3.96/4.0: Recipient of the Doug Waechter Memorial Award for Academic Excellence</li>
+            <li>Courses in programming, networking, cloud systems, information security, DevOps and systems design</li>
+        </ul>
+
+        <h3>pwn.college <a href="https://pwn.college/hacker/4918">Orange Belt</a></h3>
+        <p>Arizona State University | Online</p>
+        <ul>
+            <li>Completed all challenges in web security, cryptography and network traffic interception</li>
+            <li>Earned first blood on the final network interception challenge crafting packets using <em>scapy</em> to perform a MITM attack</li>
+        </ul>
+        <ul>
+
+        </ul>
+    </div>
+
+    <div class="section skills">
+        <div class="section-title">Skills</div>
+        <ul>
+            <li>Python</li>
+            <li>SOAR</li>
+            <li>Security Operations</li>
+            <li>Automation</li>
+            <li>GitHub</li>
+            <li>Cloud (Azure, AWS)</li>
+            <li>Communication</li>
+            <li>APIs</li>
+            <li>Problem Solving</li>
+            <!-- More skills here -->
+        </ul>
+    </div>
+
+
+    <div class="section visits">
+        <p>Hits: <span id="count"></span></p>
+    </div>
+
+    <!-- Additional sections can be added here -->
+</div>
+</body>
+</html>
