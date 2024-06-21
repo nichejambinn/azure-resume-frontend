@@ -16,13 +16,13 @@ jobs:
     defaults:
       run:
         shell: bash
-        
+
     steps:
       - name: checkout repo
         uses: actions/checkout@v4
 
       - name: azure login
-        uses: azure/login@v1
+        uses: azure/login@v1.1.5
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
