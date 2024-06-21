@@ -30,6 +30,7 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - run: cd terraform
+      - run: pwd
       - run: terraform init
       - run: terraform fmt -check
       - run: terraform plan -input=false
