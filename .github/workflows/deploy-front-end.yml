@@ -29,10 +29,10 @@ jobs:
       - name: setup tf
         uses: hashicorp/setup-terraform@v3
 
-      - run: cd terraform
-      - run: pwd
-      - run: terraform init
-      - run: terraform fmt -check
-      - run: terraform plan -input=false
-      - run: terraform apply
-    
+      - name: tf plan-apply
+        working-directory: ./terraform
+        run: |
+          terraform init
+          terraform fmt -check
+          terraform plan -input=false
+          terraform apply
