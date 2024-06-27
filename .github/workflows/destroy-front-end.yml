@@ -41,7 +41,7 @@ jobs:
         run: terraform validate
 
       - name: tf plan
-        run: terraform plan -destroy
+        run: terraform plan -destroy -out destroytfplan
 
       - name: tf destroy
-        run: terraform apply -destroy -auto-approve
+        run: terraform apply -auto-approve destroytfplan
