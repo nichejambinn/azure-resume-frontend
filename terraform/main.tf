@@ -50,6 +50,7 @@ resource "azurerm_storage_blob" "js_blob" {
   type                   = "Block"
   content_type           = "application/javascript"
   source                 = "../src/js/visits.js"
+  content_md5            = filemd5("../src/js/visits.js")
 }
 
 resource "azurerm_storage_blob" "img_blobs" {
@@ -60,4 +61,5 @@ resource "azurerm_storage_blob" "img_blobs" {
   type                   = "Block"
   source                 = "../src/img/${each.value}"
   content_type           = "image/${split(".", each.value)[1]}" # assume extensions are like .png, .jpg, etc.
+  #content_md5            = filemd5("../src/img/${each.value}")
 }
