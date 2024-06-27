@@ -1,4 +1,4 @@
-name: Deploy Terraform state bucket
+name: Deploy Terraform state bucket # thanks Florian Maas https://www.fpgmaas.com/blog/azure-terraform-github-actions
 
 on:
   workflow_dispatch:
