@@ -40,6 +40,7 @@ resource "azurerm_storage_blob" "index_blob" {
   type                   = "Block"
   content_type           = "text/html"
   source                 = "../src/index.html"
+  content_md5            = "${md5("../src/index.html")}"
 }
 
 resource "azurerm_storage_blob" "js_blob" {
