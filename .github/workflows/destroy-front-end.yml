@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  destroy:
     runs-on: ubuntu-latest
     env:
       ARM_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
@@ -41,7 +41,7 @@ jobs:
         run: terraform validate
 
       - name: tf plan
-        run: terraform plan -out tfplan
+        run: terraform plan -destroy
 
       - name: tf destroy
-        run: terraform apply -destroy -auto-approve tfplan
+        run: terraform apply -destroy -auto-approve
