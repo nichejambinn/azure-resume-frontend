@@ -1,5 +1,5 @@
-name: Deploy front end
-run-name: ${{ github.actor }} is pushing changes to front end for deployment
+name: Deploy frontend
+run-name: ${{ github.actor }} is pushing changes to frontend for deployment
 on:
   push:
     branches:

@@ -1,9 +1,9 @@
 variable "default_tags" {
   default = {
-    Environment = "DEV"
+    Environment = "dev"
     Owner       = "nichejambinn"
-    Project     = "Resume"
+    Project     = "resume frontend"
   }
-  description = "Default Tags for Resume"
+  description = "default tags for resume"
   type        = map(string)
 }

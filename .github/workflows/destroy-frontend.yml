@@ -1,5 +1,5 @@
-name: Destroy front end
-run-name: ${{ github.actor }} is destroying the front end deployment
+name: Destroy frontend
+run-name: ${{ github.actor }} is destroying the frontend deployment
 on:
   workflow_dispatch:
 
