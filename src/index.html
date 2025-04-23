@@ -34,15 +34,12 @@
         padding-right: 2px;
     }
     .section {
-        margin-top: 20px;
+        margin-top: 15px;
     }
     .section-title {
         font-weight: bold;
         border-bottom: 1px solid #000;
         padding-bottom: 3px;
-    }
-    .work-experience, .certification, .education, .skills {
-        padding-left: 20px;
     }
     .work-experience p, .certification p, .education p, .skills li {
         margin: 5px 0;
@@ -52,6 +49,7 @@
         margin: 5px 0;
     }
     .work-experience ul, .certification ul, .education ul, .skills ul {
+        padding-left: 20px;
         margin: 0 0 2px;
     }
     .skills ul {
@@ -62,7 +60,7 @@
     }
     .skills li {
         flex-basis: 33%;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     .visits {
         display: flex;
@@ -76,7 +74,7 @@
     <div class="header">
         <h1>Benjamin Inch</h1>
         <p>
-            <img src=img/lock.png />Security Automation Engineer
+            <img src=img/lock.png />Security Developer
             <img src=img/location.png />Toronto ON</p>
         <p>
             <img src=img/phone-call.png /> (647) 806-8057
@@ -89,39 +87,47 @@
     
     <div class="section work-experience">
         <div class="section-title">Work Experience</div>
-        <h3>SOC Automation Engineer</h3>
-        <p>RBC | Toronto ON | Aug 2023 - Present</p>
+        <h3>Threat Hunter</h3>
+        <p>RBC | Toronto ON | Apr 2025 - present</p>
         <ul>
-            <li>Designing and implementing SOAR solutions with tools to streamline and support security investigation and response processes</li>
-            <li>Reduced MTTR by 42 hours on phishing campaign investigations by developing an automation playbook and new tool features</li>
-            <li>Collaborating with DevOps and app teams to develop automation, resulting in up to 44% time savings across high volume alerts</li>
-            <li>Discovered and reported on a proxy bypass in corporate mobile devices that could allow users to load blocked web pages</li>
-            <li>Skilled in Python and XSOAR for automating cybersecurity operations</li>
+            <li>Developing automated offensive security testing for execution on a BAS platform</li>
+            <li>Hunting for security threats that existing controls fail to alert against</li>
         </ul>
-        <h3>Security Analyst (Triage)</h3>
-        <p>RBC | Toronto ON | Jan 2022 - Aug 2023</p>
+        <h3>Cloud Security Developer</h3>
+        <p>RBC | Toronto ON | Sept 2025 - Apr 2025</p>
+        <ul>
+            <li>Implemented policy rule logic to secure Microsoft Azure environments and developed software to support operations</li>
+            <li>Developed a command-line tool to manage updates to 32 policy config-as-code files, reducing development time and human error</li>
+            <li>Tested policy compliance with resources deployed via ARM templates and the Azure Portal</li>
+        </ul>
+        <h3>Security Automation Engineer</h3>
+        <p>RBC | Toronto ON | Aug 2023 - Aug 2025</p>
+        <ul>
+            <li>Designed and implemented SOAR solutions to streamline and support security investigation and response processes</li>
+            <li>Reduced MTTR by 42 hours on phishing campaign investigations by developing an automation playbook and new tool features</li>
+            <li>Collaborated with DevOps and app teams to develop automation, resulting in up to 44% time savings across high volume alerts</li>
+            <li>Discovered and reported on a proxy bypass in corporate mobile devices that could allow users to load blocked web pages</li>
+        </ul>
+        <h3>SOC Analyst</h3>
+        <p>RBC | Toronto ON | Jan 2022 - July 2023</p>
         <ul>
             <li>Analyzed event logs from multiple sources using SIEM and EDR to determine the threat and scope of detected activity</li>
-            <li>Reported using Jupyter Notebooks on alert datam, reducing false positives by over 110 alerts per year</li>
-            <li>Crafted and updated 35 documents to socialize important info and promote repeatable processes across the team</li>
+            <li>Reported using Jupyter Notebooks on alert data, reducing false positives by over 110 alerts per year</li>
             <li>Proficient with CrowdStrike Falcon, Splunk, IBM QRadar and malware analysis for alert triage</p>
         </ul>      
-        <h3>Application Developer</h3>
-        <p>Softchoice | Oakville ON | Jan - Apr 2020</p>
-        <ul>
-            <li>Collaborated with my project lead on the development and completion of 3 single-page web applications</li>
-            <li>Utilized a geocoding API to find address coordinates as well as open source libraries for data representation</li>
-            <li>Developed using C# and JavaScript</li>
-        </ul>
         <!-- More work experiences here -->
     </div>
 
     <div class="section certification">
         <div class="section-title">Certification</div>
-        <h3>CCSP (<a href="https://www.credly.com/badges/17d738a1-4c31-40ed-8fb3-1156618415b4/linked_in?t=s6i0i1">Associate of ISC2</a>)</h3>
+        <h3>Certified Azure Red Team Professional (<a href="https://www.credential.net/08d3fef0-c20b-4cb3-b47b-d0b3f932c33d">CARTP</a>)</h3>
+        <p>Altered Security | Apr 2025</p>
+        <ul>
+            <li>Demonstrated the skills to understand and assess security of an Azure environment</li>
+        </ul>
+        <h3>CCSP (<a href="https://www.credly.com/badges/17d738a1-4c31-40ed-8fb3-1156618415b4">Associate of ISC2</a>)</h3>
         <p>ISC2 | Dec 2023</p>
         <ul>
-            <li>Achieved a passing score on the Certified Cloud Security Professional exam</li>
             <li>Confirmed knowledge and competency in applying best practices to cloud security architecture, design, operations and services</li>
         </ul>
         <h3>Microsoft Azure Fundamentals (<a href="https://www.credly.com/badges/6afa4d81-da78-4d01-a8c5-8f66c1517f40">AZ-900</a>)</h3>
@@ -144,7 +150,7 @@
         <h3>pwn.college <a href="https://pwn.college/hacker/4918">Orange Belt</a></h3>
         <p>Arizona State University | Online</p>
         <ul>
-            <li>Completed all challenges in web security, cryptography and network traffic interception</li>
+            <li>Completed all challenges in web security, cryptography, assembly and network traffic interception</li>
             <li>Earned first blood on the final network interception challenge crafting packets using <em>scapy</em> to perform a MITM attack</li>
         </ul>
         <ul>
@@ -155,23 +161,23 @@
     <div class="section skills">
         <div class="section-title">Skills</div>
         <ul>
+            <li>Security Operations</li>
             <li>Python</li>
             <li>SOAR</li>
-            <li>Security Operations</li>
-            <li>Automation</li>
-            <li>GitHub</li>
             <li>Cloud (Azure, AWS)</li>
+            <li>GitHub</li>
+            <li>Automation</li>
             <li>Communication</li>
-            <li>APIs</li>
+            <li>Malware Analysis</li>
             <li>Problem Solving</li>
             <!-- More skills here -->
         </ul>
     </div>
 
 
-    <div class="section visits">
+    <!-- <div class="section visits">
         <p>Hits: <span id="count"></span></p>
-    </div>
+    </div> -->
 
     <!-- Additional sections can be added here -->
 </div>
