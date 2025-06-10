@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +24,6 @@
     .header {
         text-align: center;
         border-bottom: 2px solid #000;
-        padding-bottom: 10px;
     }
     .header h1 {
         margin-block-end: 6px;
@@ -34,12 +32,14 @@
         padding-right: 2px;
     }
     .section {
-        margin-top: 15px;
+        margin-top: 3px;
     }
     .section-title {
         font-weight: bold;
         border-bottom: 1px solid #000;
+        padding-top: 10px;
         padding-bottom: 3px;
+        width: 100%;
     }
     .work-experience p, .certification p, .education p, .skills li {
         margin: 5px 0;
@@ -48,7 +48,7 @@
         font-size: 14px;
         margin: 5px 0;
     }
-    .work-experience ul, .certification ul, .education ul, .skills ul {
+    .work-experience ul, .education ul, .skills ul {
         padding-left: 20px;
         margin: 0 0 2px;
     }
@@ -61,6 +61,14 @@
     .skills li {
         flex-basis: 33%;
         margin-bottom: 0px;
+    }
+    .certification {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .entry {
+        flex-basis: 50%;
     }
     .visits {
         display: flex;
@@ -85,8 +93,8 @@
         </p>
     </div>
     
+    <div class="section-title">Work Experience</div>
     <div class="section work-experience">
-        <div class="section-title">Work Experience</div>
         <h3>Threat Hunter</h3>
         <p>RBC | Toronto ON | Apr 2025 - present</p>
         <ul>
@@ -118,27 +126,28 @@
         <!-- More work experiences here -->
     </div>
 
-    <div class="section certification">
-        <div class="section-title">Certification</div>
-        <h3>Certified Azure Red Team Professional (<a href="https://www.credential.net/08d3fef0-c20b-4cb3-b47b-d0b3f932c33d">CARTP</a>)</h3>
-        <p>Altered Security | Apr 2025</p>
-        <ul>
-            <li>Demonstrated the skills to understand and assess security of an Azure environment</li>
-        </ul>
-        <h3>CCSP (<a href="https://www.credly.com/badges/17d738a1-4c31-40ed-8fb3-1156618415b4">Associate of ISC2</a>)</h3>
-        <p>ISC2 | Dec 2023</p>
-        <ul>
-            <li>Confirmed knowledge and competency in applying best practices to cloud security architecture, design, operations and services</li>
-        </ul>
-        <h3>Microsoft Azure Fundamentals (<a href="https://www.credly.com/badges/6afa4d81-da78-4d01-a8c5-8f66c1517f40">AZ-900</a>)</h3>
-        <p>Microsoft | Jun 2021</p>
-        <ul>
-            <li>Demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure</li>
-        </ul>
+    <div class="section-title">Certification</div>
+    <div class="section certification">       
+        <div class="entry">
+            <h3>GCFA (Enrolled in FOR508)</h3>
+            <p>SANS GIAC | In Progress</p>
+        </div>
+        <div class="entry">
+            <h3>CCSP (<a href="https://www.credly.com/badges/17d738a1-4c31-40ed-8fb3-1156618415b4">Associate of ISC2</a>)</h3>
+            <p>ISC2 | Dec 2023</p>
+        </div>
+        <div class="entry">
+            <h3>Certified Azure Red Team Professional (<a href="https://www.credential.net/08d3fef0-c20b-4cb3-b47b-d0b3f932c33d">CARTP</a>)</h3>
+            <p>Altered Security | Apr 2025</p>
+        </div>
+        <div class="entry">
+            <h3>Microsoft Azure Fundamentals (<a href="https://www.credly.com/badges/6afa4d81-da78-4d01-a8c5-8f66c1517f40">AZ-900</a>)</h3>
+            <p>Microsoft | Jun 2021</p>
+        </div>
     </div>
 
+    <div class="section-title">Education</div>
     <div class="section education">
-        <div class="section-title">Education</div>
         <h3>Software Development & Network Engineering</h3>
         <p>Sheridan College | Oakville ON</p>
         <p>Jan 2019 - Dec 2021</p>
@@ -158,8 +167,8 @@
         </ul>
     </div>
 
+    <div class="section-title">Skills</div>
     <div class="section skills">
-        <div class="section-title">Skills</div>
         <ul>
             <li>Security Operations</li>
             <li>Python</li>
